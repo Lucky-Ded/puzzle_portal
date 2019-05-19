@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace курсовая
 {
@@ -28,10 +29,10 @@ namespace курсовая
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             menu menu = new menu();
-
-
-            int i = 0;
-
+            File.AppendAllText(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", name.Text);
+            File.AppendAllText(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", "                  ");
+            File.AppendAllText(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", w1.Content.ToString());
+            File.AppendAllText(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", "\n");
 
             menu.Show();
             this.Close();

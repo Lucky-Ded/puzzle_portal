@@ -10,8 +10,8 @@
         <ImageBrush ImageSource="123.jpg"/>
     </Window.Background>
     <Grid>
-        <Button x:Name="b7" Content="Назад" HorizontalAlignment="Left" Margin="22,375,0,0" VerticalAlignment="Top" Width="107" Click="B7_Click" Height="47" FontSize="24" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}"/>
-        <ListBox x:Name="list" HorizontalAlignment="Left" Height="274" Margin="43,84,0,0" VerticalAlignment="Top" Width="703" Background="{x:Null}" BorderBrush="White" Foreground="White" SelectionChanged="ListBox_SelectionChanged"/>
+        <Button x:Name="b7" Style="{DynamicResource myStyleIsAdongDigiDigi}" Cursor="Hand" Content="Назад" HorizontalAlignment="Left" Margin="22,375,0,0" VerticalAlignment="Top" Width="107" Click="B7_Click" Height="47" FontSize="24" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <ListBox x:Name="list" HorizontalAlignment="Left" Height="274" Margin="50,84,0,0" VerticalAlignment="Top" Width="703" Background="{x:Null}" BorderBrush="White" Foreground="White"  FontSize="24"/>
         <Label Content="Таблица лидеров" HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Height="58" Width="424" FontSize="36" Foreground="White"/>
 
     </Grid>

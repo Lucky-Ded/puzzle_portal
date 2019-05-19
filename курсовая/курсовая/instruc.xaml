@@ -11,7 +11,7 @@
     </Window.Background>
     <Grid>
         <Label HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Height="39" Width="214" Content="Инструкция" Foreground="White" FontSize="18"/>
-        <Label Content="НАПИСАТЬ!!!!" HorizontalAlignment="Left" Margin="41,57,0,0" VerticalAlignment="Top" Height="99" Width="423" Foreground="White" OpacityMask="White" BorderBrush="White"/>
+        <Label Content="Приветствуем тебя в самой лучшей в твоей жизни (нет) пазл-игре! &#xD;&#xA;Правила предельно просты - переставляй кусочки для того, чтобы&#xD;&#xA;собрать картинку, которую ты выбрал ранее!&#xD;&#xA;Попутного вiтра на этом нелегком пути! Мы верим в тебя!" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Height="121" Width="479" Foreground="White" OpacityMask="White" BorderBrush="White" FontFamily="Times New Roman" FontSize="16"/>
         <Button Content="Закрыть" HorizontalAlignment="Left" Margin="137,195,0,0" VerticalAlignment="Top" Width="224" Height="48" Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="18" Click="Button_Click"/>
 
     </Grid>

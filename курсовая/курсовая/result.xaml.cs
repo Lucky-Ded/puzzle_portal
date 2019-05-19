@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace курсовая
 {
@@ -23,25 +24,10 @@ namespace курсовая
         public result()
         {
             InitializeComponent();
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-            dlg.FileName = "date";
-            dlg.DefaultExt = ".txt";
-            dlg.Filter = "Text documents (.txt)|*.txt";
-            dlg.ShowDialog();
-            list.Items.Clear();
-            dlist.Clear();
-            string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(dlg.FileName);
-            while ((line = file.ReadLine()) != null)
-            {
-                string name = line;
-                line = file.ReadLine();
-                if (line == null) break;
-                DateTime dt = DateTime.Parse(line);
-                list.Items.Add(name);
-                dlist.Add(name, dt);
-            }
-            file.Close();
+            FileStream file1 = new FileStream(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", FileMode.Open); //создаем файловый поток 
+            StreamReader reader = new StreamReader(file1); // создаем «потоковый читатель» и связываем его с файловым потоком 
+            list.Items.Add(reader.ReadToEnd()); //считываем все данные с потока и выводим на экран
+
         }
 
         private void B7_Click(object sender, RoutedEventArgs e)
@@ -51,10 +37,6 @@ namespace курсовая
             this.Close();
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-
-        }
+       
     }
 }

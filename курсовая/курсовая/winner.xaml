@@ -13,7 +13,7 @@
         <Label x:Name="w1" Content="" HorizontalAlignment="Left" Margin="178,69,0,0" VerticalAlignment="Top" Width="158" Foreground="White" Height="32" FontSize="18" BorderBrush="White" Background="{x:Null}"/>
         <Label Content="Ваше время " HorizontalAlignment="Left" Margin="47,63,0,0" VerticalAlignment="Top" Width="131" Foreground="White" Height="38" FontSize="18"/>
         <Label Content="Введите Имя" HorizontalAlignment="Left" Margin="47,106,0,0" VerticalAlignment="Top" Foreground="White" Height="37" Width="131" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="31" Margin="178,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Background="{x:Null}" Foreground="White" BorderBrush="White" FontSize="18"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="31" Margin="178,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Background="{x:Null}" Foreground="White" BorderBrush="White" FontSize="18"/>
         <Button Content="Сохранить результат" Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}" HorizontalAlignment="Left" Margin="134,209,0,0" VerticalAlignment="Top" Width="270" Height="30" Background="{x:Null}" Foreground="White" FontSize="16" BorderBrush="White" Click="Button_Click"/>
         <Label Content="Молодец, Ты Выйгарл!!!" HorizontalAlignment="Left" Margin="178,10,0,0" VerticalAlignment="Top" Height="36" Width="234" FontSize="18" Foreground="White"/>
 

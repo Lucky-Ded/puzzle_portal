@@ -48,11 +48,11 @@ namespace курсовая
 
         Canvas cvDragSource;
 
-        
 
 
-        
-        
+
+
+
 
 
         #endregion
@@ -60,7 +60,7 @@ namespace курсовая
         #region Constructor
 
 
-
+        public int i = 0;
 
         public Window1()
         {
@@ -70,11 +70,10 @@ namespace курсовая
         InitializeComponent();
 
             DispatcherTimer dtClockTime = new DispatcherTimer();
-            // timer = new System.Windows.Threading.DispatcherTimer();
+
             dtClockTime.Tick += dispatcherTimer_Tick;
             dtClockTime.Interval = new TimeSpan(0, 0, 1);
             dtClockTime.Start();
-
 
 
             //Initialize puzzle
@@ -109,8 +108,8 @@ namespace курсовая
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
-            
-            lblTimeElapsed.Content = DateTime.UtcNow.ToLongTimeString();
+
+            lblTimeElapsed.Content = i++;
         }
 
         private void timer_tick(object sender, EventArgs e)
@@ -490,24 +489,8 @@ namespace курсовая
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-          
-            // Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
-            // dlg.FileName = "date";
-            // dlg.DefaultExt = ".txt";
-            //dlg.Filter = "Text documents (.txt)|*.txt";
-            // dlg.ShowDialog();
-            using (StreamWriter outputFile = new StreamWriter(@"C:\Users\Виталя\Desktop\date.txt"))
-            {
-                foreach (KeyValuePair<string, DateTime> kvp in dlist)
-                {
-                   
-                    outputFile.WriteLine(lblTimeElapsed.Content.ToString());
-                   // outputFile.WriteLine(kvp.Key);
-                   // outputFile.WriteLine(kvp.Value.ToString());
-                }
-            }
-        }
+        
+            
+        
     }
 }
