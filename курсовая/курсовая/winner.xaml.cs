@@ -30,7 +30,7 @@ namespace курсовая
             menu menu = new menu();
 
 
-
+            int i = 0;
 
 
             menu.Show();
