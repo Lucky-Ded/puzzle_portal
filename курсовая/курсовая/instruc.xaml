@@ -1,0 +1,18 @@
+﻿<Window x:Class="курсовая.instruc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовая"
+        mc:Ignorable="d"
+        Title="instruc" Height="261.331" Width="514.448" WindowStyle="None" Foreground="White">
+    <Window.Background>
+        <ImageBrush ImageSource="123.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Height="39" Width="214" Content="Инструкция" Foreground="White" FontSize="18"/>
+        <Label Content="НАПИСАТЬ!!!!" HorizontalAlignment="Left" Margin="41,57,0,0" VerticalAlignment="Top" Height="99" Width="423" Foreground="White" OpacityMask="White" BorderBrush="White"/>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="137,195,0,0" VerticalAlignment="Top" Width="224" Height="48" Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="18" Click="Button_Click"/>
+
+    </Grid>
+</Window>

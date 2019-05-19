@@ -1,0 +1,27 @@
+﻿<Window x:Name="z" x:Class="курсовая.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовая"
+        
+        mc:Ignorable="d"
+        Title="z" Height="450" Width="800" Background="#FFFF0707" WindowStyle="None" BorderBrush="Red" Foreground="Red">
+    <Window.OpacityMask>
+        <SolidColorBrush Color="Red"/>
+    </Window.OpacityMask>
+    <Grid>
+        
+            <Button x:Name="b1" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="792" Click="Button_Click" Height="442"  ScrollViewer.HorizontalScrollBarVisibility="Visible" Cursor="Hand" OpacityMask="Red" ForceCursor="True" Style="{DynamicResource myStyleIsAdongDigiDigi}" IsDefault="True" >
+            
+                <Button.Effect>
+                
+                <BlurEffect Radius="0"/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="нач экран.jpg" TileMode="FlipX"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

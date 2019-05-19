@@ -1,0 +1,21 @@
+﻿<Window x:Class="курсовая.options"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовая"
+        mc:Ignorable="d"
+        Title="options" Height="450" Width="800" WindowStyle="None">
+    <Grid>
+        <Button x:Name="b6" Content="Назад" HorizontalAlignment="Left" Margin="89,341,0,0" VerticalAlignment="Top" Width="75" Background="#FF1C9DB9" RenderTransformOrigin="0.5,0.5" Click="B6_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-15"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+    </Grid>
+</Window>

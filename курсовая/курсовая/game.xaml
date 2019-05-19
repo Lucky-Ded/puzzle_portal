@@ -1,0 +1,77 @@
+﻿<Window x:Class="курсовая.game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовая"
+        mc:Ignorable="d"
+        Title="game" Height="802" Width="1388" WindowStyle="None">
+    <Grid Margin="0,0,-8,2">
+        <Grid.Background>
+            <ImageBrush ImageSource="123.jpg"/>
+        </Grid.Background>
+        <Button x:Name="b8" Content="Назад" HorizontalAlignment="Left" Margin="23,672,0,0" VerticalAlignment="Top" Width="198" Click="B8_Click" Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}" Height="91" Background="{x:Null}" Foreground="White" FontSize="40" BorderBrush="{x:Null}" />
+        <Button x:Name="bim1" Content="" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="259" Height="173" Click="Bim1_Click" IsCancel="True" ClickMode="Press" FontStyle="Italic" Style="{DynamicResource myStyleIsAdongDigiDigi}" Cursor="Hand" Foreground="{x:Null}" BorderBrush="{x:Null}" >
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/ozero.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bim2" Content="" HorizontalAlignment="Left" Margin="315,70,0,0" VerticalAlignment="Top" Width="290" Height="173" Click="Bim2_Click" Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.584,0.495" >
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/gtr.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="first" Content="" HorizontalAlignment="Left" Margin="1011,70,0,0" Style="{DynamicResource myStyleIsAdongDigiDigi}" VerticalAlignment="Top" Width="307" Height="173" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="First_Click" RenderTransformOrigin="-0.262,1.739" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/leopard.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="678,70,0,0" VerticalAlignment="Top" Width="296" Height="173" Click="Button_Click" Style="{DynamicResource myStyleIsAdongDigiDigi}" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/lamba.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button  HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Width="259" Height="181" Click="Button_Click_1" Style="{DynamicResource myStyleIsAdongDigiDigi}" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/most.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Выбери Картинку" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="24" Foreground="White"/>
+        <Button  HorizontalAlignment="Left" Margin="315,269,0,0" VerticalAlignment="Top" Width="290" Height="181" Style="{DynamicResource myStyleIsAdongDigiDigi}" Click="Button_Click_3" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/toge.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="678,269,0,0" VerticalAlignment="Top" Width="296" RenderTransformOrigin="0.16,0" Height="181" Style="{DynamicResource myStyleIsAdongDigiDigi}" Click="Button_Click_2" Cursor="Hand" >
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/sobaka.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="1011,269,0,0" VerticalAlignment="Top" Width="307" Height="181" Style="{DynamicResource myStyleIsAdongDigiDigi}" Click="Button_Click_4" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/sidney.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="10,487,0,0" VerticalAlignment="Top" Width="259" Height="180" Style="{DynamicResource myStyleIsAdongDigiDigi}" Click="Button_Click_5" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/panda.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="315,487,0,0" VerticalAlignment="Top" Width="290" Height="180" Style="{DynamicResource myStyleIsAdongDigiDigi}" Click="Button_Click_6" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/r34.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="678,487,0,0" VerticalAlignment="Top" Width="296" Height="180" Style="{DynamicResource myStyleIsAdongDigiDigi}" Cursor="Hand" Click="Button_Click_7">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/ironman.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="1011,487,0,0" VerticalAlignment="Top" Width="307" Height="180" Style="{DynamicResource myStyleIsAdongDigiDigi}" Cursor="Hand" Click="Button_Click_8">
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for game/joker.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

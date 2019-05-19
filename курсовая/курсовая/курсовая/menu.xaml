@@ -1,0 +1,19 @@
+﻿<Window x:Class="курсовая.menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовая"
+        mc:Ignorable="d"
+        Title="menu" Height="450" Width="800" WindowStyle="None" >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="фон.jpg"/>
+        </Grid.Background>
+        <Button x:Name="b2" Content="Выход" HorizontalAlignment="Left" Margin="50,368,0,0" VerticalAlignment="Top" Width="76" Click="B2_Click"  Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}"/>
+        <Button x:Name="b3" Content="Играть" HorizontalAlignment="Left" Margin="77,56,0,0" VerticalAlignment="Top" Width="135" Height="40" Click="B3_Click" Cursor="Hand"  Style="{DynamicResource myStyleIsAdongDigiDigi}"/>
+        <Button x:Name="b4" Content="Настройки" HorizontalAlignment="Left" Margin="77,125,0,0" VerticalAlignment="Top" Width="117" Height="66" Click="B4_Click" Cursor="Hand"  Style="{DynamicResource myStyleIsAdongDigiDigi}"/>
+        <Button x:Name="b5" Content="Таблица лидеров" HorizontalAlignment="Left" Margin="77,222,0,0" VerticalAlignment="Top" Width="135" Height="50" Click="B5_Click"  Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}"/>
+
+    </Grid>
+</Window>

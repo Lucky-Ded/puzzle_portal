@@ -1,0 +1,35 @@
+﻿<Window x:Class="курсовая.game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовая"
+        mc:Ignorable="d"
+        Title="game" Height="450" Width="800" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="фон.jpg"/>
+        </Grid.Background>
+        <Button x:Name="b8" Content="Назад" HorizontalAlignment="Left" Margin="95,360,0,0" VerticalAlignment="Top" Width="75" Click="B8_Click" Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}" />
+        <Button x:Name="bim1" Content="" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="160" Height="92" Click="Bim1_Click" IsCancel="True" ClickMode="Press" FontStyle="Italic" Style="{DynamicResource myStyleIsAdongDigiDigi}" Cursor="Hand" >
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for Game/3.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bim2" Content="" HorizontalAlignment="Left" Margin="192,69,0,0" VerticalAlignment="Top" Width="154" Height="93" Click="Bim2_Click" Cursor="Hand" Style="{DynamicResource myStyleIsAdongDigiDigi}" >
+            <Button.Background>
+                <ImageBrush ImageSource="Puzle/for Game/6.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bim3" Content="" HorizontalAlignment="Left" Margin="360,70,0,0" VerticalAlignment="Top" Width="156" Height="92" Click="Bim3_Click" RenderTransformOrigin="0.34,0.667" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display" Background="{x:Null}">
+            <Button.CacheMode>
+                <BitmapCache/>
+            </Button.CacheMode>
+        </Button>
+        <Button x:Name="first" Content="Button" HorizontalAlignment="Left" Margin="58,216,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="220,201,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="379,216,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Выберите Картинку" HorizontalAlignment="Left" Margin="220,32,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="24"/>
+
+    </Grid>
+</Window>
