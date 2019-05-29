@@ -12,12 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NUnit.Framework;
 
 namespace курсовая
 {
-
+    [TestFixture]
     class Puzzle
-    {  public  int Nomer { get; set; }
+        
+    {
+        
+        public  int Nomer { get; set; }
         public ObservableCollection<PuzzlePiece> puzzlePiece = new ObservableCollection<PuzzlePiece>();
 
         public string name;
@@ -35,7 +39,7 @@ namespace курсовая
                 Edited(this, e);
         }
 
-        public void Initialize(int chosen)
+        public bool Initialize(int chosen)
         {
             string directorySource = "";
 
@@ -100,18 +104,21 @@ namespace курсовая
 
                 directorySource = "RabbitPuzzle9";
             }
-                if (chosen == 11)
-                {
-                    this.name = "Rabbit Puzzle10";
+            if (chosen == 11)
+            {
+                this.name = "Rabbit Puzzle10";
 
-                    directorySource = "RabbitPuzzle10";
-                }
+                directorySource = "RabbitPuzzle10";
+            }
             if (chosen == 12)
             {
                 this.name = "Rabbit Puzzle11";
 
                 directorySource = "RabbitPuzzle11";
             }
+
+
+
             for (int i = 0; i < 16; i++)
             {
                 this.puzzlePiece.Add(new PuzzlePiece());
@@ -121,6 +128,7 @@ namespace курсовая
                 this.puzzlePiece[i].UriString = "Puzle/" + directorySource + "/" + (i + 1).ToString() + ".png";
 
                 this.puzzlePiece[i].PuzzleImageSource = new BitmapImage(new Uri(this.puzzlePiece[i].UriString, UriKind.Relative));
+
             }
 
             //shuffle
@@ -138,7 +146,9 @@ namespace курсовая
 
                 this.puzzlePiece[random] = buffer;
             }
+            return (chosen == 2);
         }
+
 
         public bool Validate(ObservableCollection<PuzzlePiece> itemPlacement)
         {
@@ -152,6 +162,15 @@ namespace курсовая
             }
 
             return true;
+
+        }
+        [TestCase]
+        public void vibor()
+        {
+            Puzzle f = new Puzzle();
+            Assert.IsTrue(f.Initialize(2));
+            Assert.IsFalse(f.Initialize(99));
         }
     }
+    
 }
