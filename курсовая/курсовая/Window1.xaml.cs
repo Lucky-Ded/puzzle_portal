@@ -16,25 +16,26 @@ using System.Collections;
 using System.Timers;
 using System.Windows.Threading;
 using System.IO;
+using NUnit.Framework;
 
 namespace курсовая
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-
+    [TestFixture]
     public partial class Window1 : Window
     {
 
         Dictionary<string, DateTime> dlist = new Dictionary<string, DateTime>();
-      
-        
+
+
         public int Nomer
         {
             get { return new int(); }
             set { puzzle.Initialize(value); }
         }
-        
+
 
         #region Objects
 
@@ -65,9 +66,9 @@ namespace курсовая
         public Window1()
         {
 
-         
 
-        InitializeComponent();
+
+            InitializeComponent();
 
             DispatcherTimer dtClockTime = new DispatcherTimer();
 
@@ -101,8 +102,8 @@ namespace курсовая
             //puzzle edited handler
             puzzle.Edited += new EventHandler(puzzle_Edited);
 
-            
-           
+
+
 
         }
 
@@ -115,7 +116,7 @@ namespace курсовая
         private void timer_tick(object sender, EventArgs e)
         {
 
-            
+
 
             //lblTimeElapsed.Content = DateTime.Now.ToString("HH:mm:ss:ff");
             //lblTimeElapsed.Content = DateTime.Now.ToLongTimeString();
@@ -123,7 +124,7 @@ namespace курсовая
 
         }
 
-        
+
 
 
 
@@ -140,7 +141,7 @@ namespace курсовая
         /// <param name="e"></param>
         private void puzzleItemList_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            
+
             ListBox parent = sender as ListBox;
 
             lbDragSource = parent;
@@ -351,11 +352,11 @@ namespace курсовая
                 winner winner = new winner();
                 winner.w1.Content = lblTimeElapsed.Content;
                 winner.Show();
-               
 
-                
+
+
                 this.Close();
-               
+
             }
         }
 
@@ -363,10 +364,10 @@ namespace курсовая
 
         #region method to get associated canvas :D
 
-        private Canvas GetAssociatedCanvasByIndex(int index)
+        public   Canvas  GetAssociatedCanvasByIndex(int index)
         {
             int i = index;
-
+          
             if (i == 0)
                 return puzzlePart1;
             else if (i == 1)
@@ -399,6 +400,7 @@ namespace курсовая
                 return puzzlePart15;
             else if (i == 15)
                 return puzzlePart16;
+            
             return null;
         }
 
@@ -460,8 +462,8 @@ namespace курсовая
                     return data;
                 }
             }
-            
-                return null;
+
+            return null;
         }
 
         #endregion
@@ -472,9 +474,9 @@ namespace курсовая
         {
             instruc instruc = new instruc();
             instruc.Show();
-           
+
         }
-       
+
 
 
 
@@ -489,8 +491,16 @@ namespace курсовая
 
         }
 
-        
+
+
+        [TestCase]
+        public void viborcanvas()
+        {
+            Window1 f = new Window1();
             
-        
+            Assert.AreEqual(puzzlePart2, GetAssociatedCanvasByIndex(1));
+           // Assert.IsFalse(f.Initialize(99));
+        }
     }
+    
 }
