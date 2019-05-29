@@ -24,7 +24,7 @@ namespace курсовая
         public result()
         {
             InitializeComponent();
-            FileStream file1 = new FileStream(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", FileMode.Open); //создаем файловый поток 
+            FileStream file1 = new FileStream(@"C:\ri87\git курсовая1\курсовая\date1.txt", FileMode.Open); //создаем файловый поток 
             StreamReader reader = new StreamReader(file1); // создаем «потоковый читатель» и связываем его с файловым потоком 
             list.Items.Add(reader.ReadToEnd()); //считываем все данные с потока и выводим на экран
 

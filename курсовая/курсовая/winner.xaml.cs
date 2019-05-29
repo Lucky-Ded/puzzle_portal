@@ -29,10 +29,10 @@ namespace курсовая
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             menu menu = new menu();
-            File.AppendAllText(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", name.Text);
-            File.AppendAllText(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", "                  ");
-            File.AppendAllText(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", w1.Content.ToString());
-            File.AppendAllText(@"C:\Users\Виталя\Desktop\Курсовая1\курсовая\date1.txt", "\n");
+            File.AppendAllText(@"C:\ri87\git курсовая1\курсовая\date1.txt", name.Text);
+            File.AppendAllText(@"C:\ri87\git курсовая1\курсовая\date1.txt", "                  ");
+            File.AppendAllText(@"C:\ri87\git курсовая1\курсовая\date1.txt", w1.Content.ToString());
+            File.AppendAllText(@"C:\ri87\git курсовая1\курсовая\date1.txt", "\n");
 
             menu.Show();
             this.Close();
